@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/ec75aad9dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+    <title>Ulubione filmy</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul> -->
+
+        <div class="logo"></div>
+      </nav>
+    </header>
+    <main>
+      <div class="bg-filmy">
+        <!-- https://www.pexels.com/video/abstract-video-4990246/ -->
+        <video muted autoplay loop>
+          <source src="assets/red_on_black_bg.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <!-- section.grand-slider was added because "slider arrow" wouldn't overflow parent -->
+      <section class="grand-slider">
+        <div class="slider">
+          <!-- https://www.pexels.com/video/stringer-recording-arrest-at-crime-scene-10480733/ -->
+          <video muted autoplay loop>
+            <source src="assets/nigthcrawler_bg.mp4" type="video/mp4" />
+          </video>
+          <h1>Zobacz niżej które filmy są najlepsze</h1>
+          <i class="fa-solid fa-arrow-down"></i>
+        </div>
+      </section>
+
+      <article class="cool-grid">
+        <img id="fightClub" src="assets/images/square/transparent-fight_club.jpg" alt="" />
+        <img id="nightcrawler" src="assets/images/square/transparent-nightcrawler.jpg" alt="" />
+        <img id="parasite" src="assets/images/square/parasite.jpg" alt="" />
+        <img id="interstellar" src="assets/images/square/transparent-interstellar.jpg" alt="" />
+        <img id="nobody" src="assets/images/square/transparent-nobody.jpg" alt="" />
+        <img id="reservoir" src="assets/images/square/transparent-reservoir_dogs.jpg" alt="" />
+      </article>
+
+      <article class="movie-info fightClub" tabindex="-1">
+        <img src="assets/images/norton.jpg" alt="" />
+        <div>
+          <h1>Fight club <sup>(1999)</sup></h1>
+
+          <p>
+            Narrator, trzydziestokilkuletni Jack, pracuje w dużej firmie. Ma dobrze płatną posadę, perspektywę awansu i komfortowe
+            mieszkanie. Przez telefon kupuje kolejne luksusowe artykuły, ale pozycja społeczna go nie cieszy. Czuje się samotny. Od pół
+            roku cierpi na bezsenność. Lekarz sugeruje mu, aby wybrał się na spotkanie grupy wspierającej mężczyzn chorych na raka, co
+            pozwoli mu nabrać dystansu do własnych cierpień. Na jednym spotkań Jack poznaje intrygującą i pewną siebie cyniczkę, Marlę
+            Singer, która zbiorową terapię traktuje jako darmową rozrywkę. Wkrótce los styka go z charyzmatycznym Tylerem Durdenem.
+            Tyler uważa się za anarchistę. Kiedy mieszkanie Jacka zostaje zniszczone w wyniku tajemniczego wybuchu, Tyler ofiaruje mu
+            gościnę. Piją na umór i w barze, dla zabawy, wszczynają bójkę na pięści, która nieoczekiwanie przynosi im dużą
+            satysfakcję...
+          </p>
+        </div>
+      </article>
+
+      <article class="movie-info nightcrawler" tabindex="-1">
+        <img src="assets/images/lou.jpeg" alt="" />
+        <div>
+          <h1>Nightcrawler <sup>(2014)</sup></h1>
+          <p>
+            Mroczne oblicze amerykańskiego snu i portret człowieka, który dla sukcesu nie cofnie się nawet przed zbrodnią. Jake
+            Gyllenhaal w życiowej kreacji wolnego strzelca, którego stać na absolutnie wszystko, żeby wspiąć się po szczeblach kariery
+            kronikarza najniebezpieczniejszych dzielnic Los Angeles. Zobacz, jak spełnia się American Dream w czasach, gdy sumienie
+            jest wadą, a droga do zwycięstwa nierzadko wiedzie po trupach. Ryzykanty polują na wypadki samochodowe, pożary, morderstwa
+            i innego rodzaju ludzkie katastrofy, mając nadzieję sprzedać swe filmy lokalnym stacjom telewizyjnym, poszukującym taniej
+            sensacji.
+          </p>
+        </div>
+      </article>
+
+      <article class="movie-info parasite" tabindex="-1">
+        <img src="assets/images/realization.jpg" alt="" />
+        <div>
+          <h1>Parasite <sup>(2019)</sup></h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, error doloremque! Voluptatibus animi ipsum totam nihil
+            provident voluptate, nemo rem aperiam expedita minima vero repellat quos modi neque nesciunt id officia quas? Temporibus
+            quod animi possimus exercitationem totam ex. Ipsum quibusdam commodi culpa quasi dicta cupiditate corporis ipsam nostrum
+            odio!
+          </p>
+        </div>
+      </article>
+
+      <article class="movie-info interstellar" tabindex="-1">
+        <img src="assets/images/interMeme.jpg" alt="" />
+        <div>
+          <h1>Interstellar <sup>(2014)</sup></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis pariatur, quae, dolore reprehenderit rem repellendus
+            obcaecati repellat excepturi fugit odio nulla maiores neque adipisci sapiente facilis vel possimus doloribus. Autem enim
+            quidem est. Minus atque tempora excepturi nihil consequatur perspiciatis saepe similique! Impedit, corrupti error cum
+            mollitia natus inventore vero!
+          </p>
+        </div>
+      </article>
+
+      <article class="movie-info nobody" tabindex="-1">
+        <img src="assets/images/saulChill.jpg" alt="" />
+        <div>
+          <h1>Nobody <sup>(2021)</sup></h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia vero iusto id eaque cupiditate odio maiores tempore
+            nobis nemo, tempora ut molestias beatae quam quidem optio nostrum velit suscipit fuga aliquam provident iure quo? Officia
+            quidem distinctio obcaecati velit adipisci impedit quod, sequi eos reprehenderit nemo quia, libero maxime?
+          </p>
+        </div>
+      </article>
+
+      <article class="movie-info reservoir" tabindex="-1">
+        <img src="assets/images/noYou.jpeg" alt="" />
+        <div>
+          <h1>Reservoir Dogs <sup>(1992)</sup></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id officiis adipisci voluptate nobis ratione nulla. Saepe hic
+            exercitationem velit alias similique tempora maiores quo maxime, dignissimos quos beatae ducimus vero molestiae labore iste
+            illum ex? Cupiditate nam aliquam, rerum natus, laborum adipisci facilis corrupti modi sapiente, quisquam exercitationem
+            nulla voluptate!
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <div class="social-media">
+        <div><i class="fa-brands fa-stack-overflow"></i></div>
+        <div><i class="fa-brands fa-facebook"></i></div>
+        <div><i class="fa-brands fa-github"></i></div>
+        <div><i class="fa-brands fa-instagram"></i></div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+
+/* CSS HSL */
+--xiketic: hsla(231, 82%, 6%, 1);
+--dark-sienna: hsla(339, 80%, 12%, 0.8);
+--rosewood: hsla(354, 93%, 22%, 0.5);
+--dark-red: hsla(358, 97%, 31%, 1);
+--rosso-corsa: hsla(0, 100%, 41%, 1);
+--vermilion: hsla(12, 98%, 44%, 1);
+--persimmon: hsla(23, 97%, 46%, 1);
+--tangerine: hsla(34, 95%, 49%, 0.8);
+--orange-web: hsla(39, 96%, 50%, 1);
+--selective-yellow: hsla(43, 100%, 52%, 1);
+--main-bg: rgba(8, 0, 0, 0.856);;
+
+
+}
+
+
+/* Fight Club font */
+@font-face {
+  font-family: DeathMarkers;
+  src: url("assets/fonts/death-markers-font/DeathMarkersDrip-mLZ25.otf") format("opentype");
+}
+
+/*  nobody font */
+@font-face {
+  font-family: asylum;
+  src: url("assets/fonts/black-asylum-font/BlackAsylum-xypj.ttf") format("truetype");
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  color: white;
+  background-color: rgb(43, 43, 43);
+  overflow-x:hidden;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.bg-filmy video {
+
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.7;
+
+}
+
+ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.5em;
+  border-bottom: 2px solid var(--rosewood);
+}
+ul a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  line-height: 2;
+}
+a:hover {
+  text-decoration: underline;
+}
+header,main, footer {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 90%;
+}
+main {
+  min-height: 100vh;
+  background-color: var(--main-bg);
+  padding: 5px 20px 20px;
+  
+}
+
+/* this was added because slider arrow wouldn't overflow parent */
+.grand-slider {
+  position: relative;
+}
+.slider {
+  margin: 60px 0 20px;
+  border-radius: 100px;
+  overflow: hidden;
+  
+  box-shadow: 0px 0px 38px 15px rgba(163, 0, 0, 0.47);
+  height: 500px;
+}
+.slider video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  
+}
+
+header {
+  background-color: #370617;
+  position: relative;
+}
+
+
+.slider h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 rgba(0,0,0,0), 0px -2px 0 black;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  text-align: center;
+  
+  
+}
+
+.logo {
+  
+  width: 150px;
+  height: 150px;
+  display: block;
+  position: absolute;
+  right: 50%;
+  top: 10px;
+  transform: translate(50%,0);
+  border-radius: 50px;
+  z-index: 1;
+  border: 3px solid var(--rosso-corsa);
+  padding: 10px;
+  background: url(assets/rysunek.svg);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  /* background-position: -28px -100px; */
+  background-position: center ;
+  background-color: black;
+}
+
+.cool-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  /* background: var(--xiketic); */
+  gap: 20px;
+  margin: 200px 0 200px;
+  
+}
+.cool-grid img {
+  max-width: 100%;
+  border-radius: 50px;
+  border: 10px solid #370617;
+  cursor: pointer;
+  box-shadow: none;
+  transition: all 0.5s;
+}
+#fightClub {
+  cursor: url("assets/images/cursors/fightclub.png") 16 16, auto;
+}
+#parasite {
+  cursor: url("assets/images/cursors/parasite.png") 16 0, auto;
+}
+#interstellar {
+  cursor: url("assets/images/cursors/spaceship.png") 16 0, auto;
+}
+#nobody {
+  cursor: url("assets/images/cursors/bus.png") 16 0, auto;
+}
+#reservoir {
+  cursor: url("assets/images/cursors/crosshair.png") 16 16, auto;
+}
+
+
+
+/* https://html-css-js.com/css/generator/text-shadow/ */
+.cool-grid img:hover {
+  box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.movie-info {
+  min-height: 500px;
+  margin-bottom: 50px;
+  padding: 20px;
+  position: relative;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px 0px 0 black, 0px 1px 0 black, -1px 0px 0 rgba(0,0,0,0), 0px -1px 0 black;
+  
+  word-spacing: 2px;
+  text-align: justify;
+  line-height: 1.5;
+}
+.movie-info img {
+  width: 250px;
+  height: 50%;
+  border-radius: 50px;
+  float: left;
+}
+.movie-info:nth-child(2n) img{
+  float: right;
+  margin-left: 50px;
+}
+.movie-info:nth-child(2n + 1) img {
+  margin-right: 50px;
+} 
+
+.movie-info h1 {
+  text-shadow: 5px 5px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 rgba(0,0,0,0), 0px -2px 0 black;
+  font-size: 3rem;
+  margin: 0 0 20px 0;
+}
+.movie-info.fightClub h1 {
+  font-family: DeathMarkers;
+  letter-spacing: 15px;
+  color:#ad4a78;
+}
+.movie-info img.shakeThis {
+  animation: shakeThis 0.5s;
+  animation-iteration-count: 3;
+}
+@keyframes shakeThis {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.movie-info img.shakeForever {
+  animation: shakeForever 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shakeForever {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.movie-info.nobody h1 {
+  font-family: 'Special Elite', cursive;
+  text-transform: uppercase;
+  /* letter-spacing: 15px; */
+}
+
+
+
+
+.fightClub {
+  background-color: #4A241B;
+  cursor: url("assets/images/cursors/fightclub.png") 16 16, auto;
+  
+}
+.fightClub img {
+  border: 5px solid #6780AB;
+}
+
+.nightcrawler {
+  background-color: #DA8668;
+  color: black;
+  text-shadow: none;
+  
+}
+
+.nightcrawler h1 {
+  color: #fdef38;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 8px;
+  font-size: 4rem;
+
+}
+
+.nightcrawler img {
+  /* margin-left: auto; */
+  
+  border: 5px solid #4D2F3D;
+}
+
+.parasite {
+  background-color: rgb(199, 80, 0);
+  cursor: url("assets/images/cursors/parasite.png") 16 16, auto;
+}
+.parasite img {
+  border: 5px ridge var(--rosewood);
+}
+.interstellar {
+  background-color: rgb(122, 122, 122);
+  cursor: url("assets/images/cursors/spaceship.png") 16 0, auto;
+}
+.interstellar img {
+  border: 5px ridge white;
+}
+.reservoir {
+  background-color: brown;
+  cursor: url("assets/images/cursors/crosshair.png") 16 16, auto;
+}
+.reservoir img {
+  border: 5px solid var(--dark-sienna);
+}
+.nobody {
+  background-color: rgb(109, 71, 0);
+  cursor: url("assets/images/cursors/bus.png") 16 16, auto;
+
+}
+.nobody img {
+  border: 5px solid var(--xiketic);
+}
+
+footer {
+  background-color: #370617;
+}
+.social-media {
+  padding: 100px 0 100px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.social-media i {
+  font-size: 50px;
+  transition:all 0.5s;
+  /* transition-timing-function: ease-in; */
+  cursor: pointer;
+  
+}
+.social-media i:hover {
+  animation-name: rotatnij;
+  animation-duration: 1s;
+  animation-play-state: running;
+  color: red;
+
+  
+  
+  transform: scale(1.5);
+}
+
+@keyframes rotatnij {
+  from {
+    transform: rotate(0deg) scale(1.5);
+  }
+  40% {
+    transform: rotate(180deg) scale(1.7);
+  }
+  75% {
+    transform: rotate(360deg) scale(2);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+.slider i {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  bottom: -50px;
+  right: 50%;
+  transform: translate(50%, 0);
+  transition: all 0.5s;
+  cursor: pointer;
+  
+  text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 rgba(0,0,0,0), 0px -2px 0 black;
+}
+.slider i:hover {
+  font-size: 200px;
+  bottom: -150px;
+  overflow: visible;
+  color: #FFFFFF;
+  
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+
+
