@@ -209,7 +209,6 @@ header {
   padding: 20px;
   position: relative;
   font-size: 1.1rem;
-  text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px 0px 0 black, 0px 1px 0 black, -1px 0px 0 rgba(0,0,0,0), 0px -1px 0 black;
   
   word-spacing: 2px;
   text-align: justify;
@@ -231,8 +230,17 @@ header {
 
 .movie-info h1 {
   text-shadow: 5px 5px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 rgba(0,0,0,0), 0px -2px 0 black;
-  font-size: 3rem;
+  font-size: 3.2rem;
   margin: 0 0 20px 0;
+  text-align: center;
+  border-radius: 50px;
+}
+.movie-info h1 sup {
+  letter-spacing: 1px;
+}
+.movie-info p {
+  border-radius: 20px;
+  padding: 15px;
 }
 .movie-info.fightClub h1 {
   font-family: DeathMarkers;
@@ -284,10 +292,20 @@ header {
 
 
 .fightClub {
-  background-color: #4A241B;
+  /* background-color: #4A241B; */
   cursor: url("assets/images/cursors/fightclub.png") 16 16, auto;
+  background-image: url("assets/images/tylerBG.png");
+  background-repeat:repeat-x;
+  background-size: cover;
   
 }
+.fightClub p {
+  background-color: #4A241B;
+}
+.fightClub h1 {
+  background-color: #9c9c9c8c;
+}
+
 .fightClub img {
   border: 5px solid #6780AB;
 }
@@ -297,7 +315,13 @@ header {
   color: black;
   text-shadow: none;
   cursor: url("assets/images/cursors/nightcrawler.png") 16 0, auto;
+  background-image: url(assets/images/dodger.png);
+  background-size: cover;
+  background-position: 0px -50px;
   
+}
+.nightcrawler p {
+  background-color: #DA8668;
 }
 
 .nightcrawler h1 {

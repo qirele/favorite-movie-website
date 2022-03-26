@@ -37,18 +37,6 @@ arrowEl.addEventListener("click", () => {
   window.scrollTo({ top: y, behavior: "smooth" });
 });
 
-// const showDescBtns = document.querySelectorAll(".movie-info button");
-// showDescBtns.forEach(e => {
-//   let movieInfoDiv = e.parentNode.querySelector("div");
-//   movieInfoDiv.style.visibility = "hidden";
-//   e.addEventListener("click", () => {
-//     if (movieInfoDiv.style.visibility == "hidden")
-//       movieInfoDiv.style.visibility = "visible";
-//     else
-//     movieInfoDiv.style.visibility = "hidden";
-//   });
-
-// });
 
 const descFightClubImg = document.querySelector(".fightClub img");
 let nortonInterval;
@@ -58,15 +46,12 @@ descFightClubImg.addEventListener("mouseover", () => {
   clearInterval(nortonInterval);
   clearTimeout(bullTimeout);
 
-  descFightClubImg.src = "assets/images/nortonXdurden.jpg";
-  descFightClubImg.classList.add("shakeForever");
-  
+  descFightClubImg.src = "assets/images/nortonXdurden.jpg";  
   
 });
 
 descFightClubImg.addEventListener("mouseleave", () => {
   descFightClubImg.src = "assets/images/norton.jpg";
-  descFightClubImg.classList.remove("shakeForever");
   nortonInterval = setInterval(() => {changeImg()}, 2000);
 });
 
@@ -82,5 +67,17 @@ function changeImg() {
     descFightClubImg.classList.remove("shakeThis");
   }, 500);
 }
+
+
+movieArticles.forEach(e => {
+  e.querySelector("img").addEventListener("mouseover", () => {
+    e.querySelector("img").classList.add("shakeForever");
+    e.querySelector("img").classList.remove("shakeThis");
+    
+  });
+  e.querySelector("img").addEventListener("mouseleave", () => {
+    e.querySelector("img").classList.remove("shakeForever");
+  });
+});
 
 
