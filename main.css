@@ -180,6 +180,9 @@ header {
 #fightClub {
   cursor: url("assets/images/cursors/fightclub.png") 16 16, auto;
 }
+#nightcrawler {
+  cursor: url("assets/images/cursors/nightcrawler.png") 16 16, auto;
+}
 #parasite {
   cursor: url("assets/images/cursors/parasite.png") 16 0, auto;
 }
@@ -293,6 +296,7 @@ header {
   background-color: #DA8668;
   color: black;
   text-shadow: none;
+  cursor: url("assets/images/cursors/nightcrawler.png") 16 0, auto;
   
 }
 
