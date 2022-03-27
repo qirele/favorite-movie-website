@@ -86,9 +86,37 @@ movieArticles.forEach(e => {
   });
   img.addEventListener("mouseleave", () => {
     img.classList.remove("shakeForever");
-    img.remove("shakeThis");
+    img.classList.remove("shakeThis");
   });
 });
 //------------------------------------
 
 /* scroll back to top btn functionality */
+const topBtn = document.querySelector("#scrollToTop");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+}
+
+topBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+//-----------------------------------------
+
+
+/* make movie btns pressable by enter key */
+movieBtns.forEach(el => {
+  el.addEventListener("keyup", (e) => {
+    if (e.key == "Enter") {
+      el.click();
+    }
+    
+  });
+});
