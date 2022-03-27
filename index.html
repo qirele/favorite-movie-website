@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/ec75aad9dc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css" />
+    <!--  https://codepen.io/liamj/pen/vvdRdR cool button toggle -->
+    <link rel="stylesheet" href="showImg.css" />
     <script src="main.js" defer></script>
     <title>Ulubione filmy</title>
   </head>
@@ -36,12 +38,12 @@
       </section>
 
       <article class="cool-grid">
-        <img id="fightClub" src="assets/images/square/transparent-fight_club.jpg" alt="" tabindex="0"/>
-        <img id="nightcrawler" src="assets/images/square/transparent-nightcrawler.jpg" alt="" tabindex="0"/>
-        <img id="parasite" src="assets/images/square/parasite.jpg" alt="" tabindex="0"/>
-        <img id="interstellar" src="assets/images/square/transparent-interstellar.jpg" alt="" tabindex="0"/>
-        <img id="nobody" src="assets/images/square/transparent-nobody.jpg" alt="" tabindex="0"/>
-        <img id="reservoir" src="assets/images/square/transparent-reservoir_dogs.jpg" alt="" tabindex="0"/>
+        <img id="fightClub" src="assets/images/square/transparent-fight_club.jpg" alt="" tabindex="0" />
+        <img id="nightcrawler" src="assets/images/square/transparent-nightcrawler.jpg" alt="" tabindex="0" />
+        <img id="parasite" src="assets/images/square/parasite.jpg" alt="" tabindex="0" />
+        <img id="interstellar" src="assets/images/square/transparent-interstellar.jpg" alt="" tabindex="0" />
+        <img id="nobody" src="assets/images/square/transparent-nobody.jpg" alt="" tabindex="0" />
+        <img id="reservoir" src="assets/images/square/transparent-reservoir_dogs.jpg" alt="" tabindex="0" />
       </article>
 
       <article class="movie-info fightClub" tabindex="-1">
@@ -51,15 +53,19 @@
 
           <p>
             Narrator, trzydziestokilkuletni Jack, pracuje w dużej firmie. Ma dobrze płatną posadę, perspektywę awansu i komfortowe
-            mieszkanie. Przez telefon kupuje kolejne luksusowe artykuły, ale pozycja społeczna go nie cieszy. Czuje się samotny. Od pół
-            roku cierpi na bezsenność. Lekarz sugeruje mu, aby wybrał się na spotkanie grupy wspierającej mężczyzn chorych na raka, co
-            pozwoli mu nabrać dystansu do własnych cierpień. Na jednym spotkań Jack poznaje intrygującą i pewną siebie cyniczkę, Marlę
-            Singer, która zbiorową terapię traktuje jako darmową rozrywkę. Wkrótce los styka go z charyzmatycznym Tylerem Durdenem.
-            Tyler uważa się za anarchistę. Kiedy mieszkanie Jacka zostaje zniszczone w wyniku tajemniczego wybuchu, Tyler ofiaruje mu
-            gościnę. Piją na umór i w barze, dla zabawy, wszczynają bójkę na pięści, która nieoczekiwanie przynosi im dużą
-            satysfakcję...
+            mieszkanie. Czuje się samotny. Od pół roku cierpi na bezsenność. Lekarz sugeruje mu, aby wybrał się na spotkanie grupy
+            wspierającej mężczyzn chorych na raka, co pozwoli mu nabrać dystansu do własnych cierpień. Na jednym spotkań Jack poznaje
+            intrygującą i pewną siebie cyniczkę, Marlę Singer, która zbiorową terapię traktuje jako darmową rozrywkę. Wkrótce los styka
+            go z charyzmatycznym Tylerem Durdenem. Tyler uważa się za anarchistę. Kiedy mieszkanie Jacka zostaje zniszczone w wyniku
+            tajemniczego wybuchu, Tyler ofiaruje mu gościnę. Piją na umór i w barze, dla zabawy, wszczynają bójkę na pięści, która
+            nieoczekiwanie przynosi im dużą satysfakcję...
           </p>
         </div>
+
+        <div>
+          <input type="checkbox" id="cb1" /><label for="cb1">Zobacz to</label>
+        </div>
+        
       </article>
 
       <article class="movie-info nightcrawler" tabindex="-1">
@@ -75,6 +81,10 @@
             sensacji.
           </p>
         </div>
+        <div>
+          <input type="checkbox" id="cb2" /><label for="cb2">Zobacz to</label>
+        </div>
+        
       </article>
 
       <article class="movie-info parasite" tabindex="-1">
@@ -90,6 +100,10 @@
             sięgnąć.
           </p>
         </div>
+        <div>
+          <input type="checkbox" id="cb3" /><label for="cb3">Zobacz to</label>
+        </div>
+        
       </article>
 
       <article class="movie-info interstellar" tabindex="-1">
@@ -103,6 +117,11 @@
             zbadania, tym samym stając się ostatnią deską ratunku dla ludzi i ich planety.
           </p>
         </div>
+
+        <div>
+          <input type="checkbox" id="cb4" /><label for="cb4">Zobacz to</label>
+        </div>
+        
       </article>
 
       <article class="movie-info nobody" tabindex="-1">
@@ -119,6 +138,10 @@
             Hutch już nigdy nie pozostanie niezauważony.
           </p>
         </div>
+        <div>
+          <input type="checkbox" id="cb5" /><label for="cb5">Zobacz to</label>
+        </div>
+        
       </article>
 
       <article class="movie-info reservoir" tabindex="-1">
@@ -133,6 +156,10 @@
             podejrzliwości będzie początkiem krwawej tragedii.
           </p>
         </div>
+        <div>
+          <input type="checkbox" id="cb6" /><label for="cb6">Zobacz to</label>
+        </div>
+        
       </article>
     </main>
     <footer>

@@ -245,7 +245,6 @@ header {
   height: 50%;
   border-radius: 50px;
   float: left;
-  /* transition: all 0.5s; */
 }
 
 .movie-info:nth-child(2n) img{
@@ -550,4 +549,8 @@ footer {
   text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 10px 20px #ff8000, 0 18px 40px #F00;
   font-size: 200px;
   right: 5px;
+}
+
+.movie-info p, .movie-info h1, .movie-info img {
+  transition: opacity 0.5s;
 }

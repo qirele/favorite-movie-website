@@ -76,18 +76,43 @@ function changeImg() {
 // -----------------------------------------------------------------------
 
 
-/* shake each description image while hovering */
+
 movieArticles.forEach(e => {
+
+  /* shake each description image while hovering */
   let img = e.querySelector("img");
+  let h1 = e.querySelector("h1");
+  let p = e.querySelector("p");
+  
+
   img.addEventListener("mouseover", () => {
     img.classList.add("shakeForever");
     img.classList.remove("shakeThis");
-    
   });
   img.addEventListener("mouseleave", () => {
     img.classList.remove("shakeForever");
     img.classList.remove("shakeThis");
   });
+
+
+  /* hide everything except button in article when toggled button */
+  let toggle = e.querySelector("input");
+  toggle.addEventListener("change", () => {
+    if (toggle.checked) {
+      img.style.opacity = "0";
+      h1.style.opacity = "0";
+      p.style.opacity = "0";
+      
+      
+    } else {
+      img.style.opacity = "1";
+      h1.style.opacity = "1";
+      p.style.opacity = "1";
+      
+    }
+  });
+
+
 });
 //------------------------------------
 
@@ -120,3 +145,4 @@ movieBtns.forEach(el => {
     
   });
 });
+
