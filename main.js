@@ -13,9 +13,16 @@ movieBtns.forEach((e) => {
 
     
     /* when we scroll down after clicking, shake the description image after 1 second */
+    element.style.transition = "transform 0.5s";
+    
+    element.style.transform = "translateX(5000px)";
+
     setTimeout(() => {
       element.querySelector("img").classList.add("shakeThis");
-    }, 1000);
+      
+      element.style.transform = "translateX(0px)";
+      element.style.transform = "none";
+    }, 400);
 
     setTimeout(() => {
       element.querySelector("img").classList.remove("shakeThis");
